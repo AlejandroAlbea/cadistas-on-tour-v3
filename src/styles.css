@@ -1,0 +1,255 @@
+/* Fuentes modernas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe600; /* Amarillo Cádiz CF */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    margin-top: 75px;
+    width: 100px;
+    height: 100px;
+    margin-right: 390px;
+    border-radius: 50%; /* Redondear el logo */
+    border: 4px solid #004b87; /* Azul del Cádiz CF */
+}
+
+/* Estilo para la alerta */
+.alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    text-align: center;
+    max-width: 90%; /* Limitar el tamaño de la alerta */
+    width: 300px; /* Ancho base */
+    box-sizing: border-box;
+}
+
+.alert button {
+    background-color: #004b87;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.alert button:hover {
+    background-color: #d32f2f;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #004b87; /* Azul Cádiz CF */
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #004b87;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+/* Estilo de los campos de entrada */
+.field {
+    margin-bottom: 15px;
+}
+
+.field label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.field input, .field select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#button {
+    background-color: #004b87; /* Azul Cádiz CF */
+    color: #ffcd00; /* Amarillo Cádiz CF */
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#button:hover {
+    background-color: #005fa3;
+}
+
+/* Estilo para el mensaje de confirmación */
+.confirmation-message {
+    text-align: left;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: none; /* Inicialmente oculto */
+}
+
+.confirmation-message.success {
+    background-color: #28a745; /* Verde éxito */
+    color: white;
+}
+
+.confirmation-message.error {
+    background-color: #dc3545; /* Rojo error */
+    color: white;
+}
+
+/* Estilos de los acompañantes */
+.field-group {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.field-group .field {
+    margin-bottom: 10px;
+}
+
+.add-button,
+.remove-button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+.remove-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+/* Ajustes Responsivos para iPhone 12 Pro */
+@media (max-width: 390px) {
+    body {
+        padding: 1px;
+    }
+
+    .container {
+        padding: 30px;
+        max-width: 90%;
+        right: -20px;
+    }
+
+    .logo-container {
+        position: absolute;
+        top: -70px; /* Ajuste para evitar solapamiento */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .logo {
+        width: 60px;  
+        height: 60px;
+        margin-left: 130px;
+        margin-top: 95px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+        margin-top: 10px;
+        margin-bottom: 25px; /* Añadido margen inferior para separar el h3 */
+    }
+
+    #button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+
+    .field input, .field select {
+        font-size: 0.9rem; /* Reducir tamaño de texto en campos para mejorar la legibilidad */
+    }
+
+    .add-button,
+    .remove-button {
+        font-size: 14px;
+    }
+
+    /* Estilo para la alerta responsive */
+    .alert {
+        width: 80%; /* Ajustar el ancho para pantallas más pequeñas */
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .alert button {
+        padding: 8px 15px;
+    }
+}
