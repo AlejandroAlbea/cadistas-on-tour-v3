@@ -41,12 +41,10 @@ body {
 }
 
 .logo {
-    margin-top: 98px;
     width: 70px;
     height: 70px;
-    margin-right: 390px;
-    border-radius: 50%; /* Redondear el logo */
-    border: 4px solid #004b87; /* Azul del Cádiz CF */
+    border-radius: 50%;
+    border: 2px solid #004b87;
 }
 
 /* Estilo para la alerta */
@@ -61,8 +59,8 @@ body {
     border-radius: 5px;
     z-index: 9999;
     text-align: center;
-    max-width: 90%; /* Limitar el tamaño de la alerta */
-    width: 300px; /* Ancho base */
+    max-width: 90%;
+    width: 300px;
     box-sizing: border-box;
 }
 
@@ -82,7 +80,7 @@ body {
 
 h1 {
     font-size: 2.8rem;
-    color: #004b87; /* Azul Cádiz CF */
+    color: #004b87;
     margin-bottom: 20px;
 }
 
@@ -91,10 +89,8 @@ h3 {
     color: #004b87;
     margin-top: 0;
     margin-bottom: 30px;
-    text-align: right;
 }
 
-/* Estilo de los campos de entrada */
 .field {
     margin-bottom: 15px;
 }
@@ -116,8 +112,8 @@ h3 {
 }
 
 #button {
-    background-color: #004b87; /* Azul Cádiz CF */
-    color: #ffcd00; /* Amarillo Cádiz CF */
+    background-color: #004b87;
+    color: #ffcd00;
     font-size: 1.2rem;
     padding: 12px 20px;
     border: none;
@@ -131,27 +127,25 @@ h3 {
     background-color: #005fa3;
 }
 
-/* Estilo para el mensaje de confirmación */
 .confirmation-message {
     text-align: left;
     padding: 15px;
     margin-top: 20px;
     border-radius: 5px;
     font-weight: bold;
-    display: none; /* Inicialmente oculto */
+    display: none;
 }
 
 .confirmation-message.success {
-    background-color: #28a745; /* Verde éxito */
+    background-color: #28a745;
     color: white;
 }
 
 .confirmation-message.error {
-    background-color: #dc3545; /* Rojo error */
+    background-color: #dc3545;
     color: white;
 }
 
-/* Estilos de los acompañantes */
 .field-group {
     margin-bottom: 20px;
     padding: 10px;
@@ -195,50 +189,52 @@ h3 {
     background-color: #c82333;
 }
 
-/* Ajustes Responsivos para iPhone 12 Pro */
+.field-group {
+    background-color: rgb(255, 255, 255);
+}
+
 @media (max-width: 450px) {
     body {
-        padding: 1px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .container {
         padding: 30px;
-        max-width: 90%;
-        right: -20px;
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+        position: relative;
     }
 
     .logo-container {
-        position: absolute;
-        top: -70px; /* Ajuste para evitar solapamiento */
+        top: -30px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .logo {
-        width: 40px;  
-        height: 40px;
-        margin-left: 130px;
-        margin-top: 95px;
+        width: 50px;
+        height: 50px;
     }
 
     h1 {
         font-size: 2rem;
-        margin-bottom: 15px;
     }
 
     h3 {
-        font-size: 0.8rem;
-        margin-top: 10px;
-        margin-bottom: 25px; /* Añadido margen inferior para separar el h3 */
+        font-size: 0.9rem;
     }
 
     #button {
         font-size: 1rem;
-        padding: 10px 18px;
+        padding: 10px;
     }
 
     .field input, .field select {
-        font-size: 0.9rem; /* Reducir tamaño de texto en campos para mejorar la legibilidad */
+        font-size: 0.9rem;
     }
 
     .add-button,
@@ -246,14 +242,11 @@ h3 {
         font-size: 14px;
     }
 
-    /* Estilo para la alerta responsive */
     .alert {
-        width: 80%; /* Ajustar el ancho para pantallas más pequeñas */
-        max-width: 90%;
         padding: 15px;
     }
 
     .alert button {
-        padding: 8px 15px;
+        padding: 8px;
     }
 }
