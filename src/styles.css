@@ -195,7 +195,6 @@ h3 {
     background-color: #c82333;
 }
 
-
 /* Ajustes Responsivos para iPhone 12 Pro */
 @media (max-width: 450px) {
     body {
@@ -216,8 +215,8 @@ h3 {
     }
 
     .logo {
-        width: 60px;  
-        height: 60px;
+        width: 40px;  
+        height: 40px;
         margin-left: 130px;
         margin-top: 95px;
     }

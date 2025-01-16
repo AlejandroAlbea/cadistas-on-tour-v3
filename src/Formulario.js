@@ -47,7 +47,7 @@ export const Formulario = () => {
           setAccompaniments([]); // Eliminar los acompañantes añadidos
         },
         (error) => {
-          alert('Error al enviar la reserva: ' + error.text);
+          alert('Error al enviar la reserva, contacta con un responsable: ' + error.text);
           setIsSubmitting(false); // Habilitar el botón si hay error
         }
       );
@@ -68,7 +68,8 @@ export const Formulario = () => {
       )}
 
       <div className="logo-container">
-              </div>
+        <img src="/icono.png" className="logo" />
+      </div>
       <h3>Reserva plaza para tus desplazamientos.</h3>
       <form ref={form} onSubmit={sendEmail}>
         <div className="field">
