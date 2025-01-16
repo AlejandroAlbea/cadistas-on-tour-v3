@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffe600; /* Amarillo Cádiz CF */
@@ -191,8 +195,9 @@ h3 {
     background-color: #c82333;
 }
 
+
 /* Ajustes Responsivos para iPhone 12 Pro */
-@media (max-width: 390px) {
+@media (max-width: 450px) {
     body {
         padding: 1px;
     }
