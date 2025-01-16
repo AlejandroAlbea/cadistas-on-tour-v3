@@ -68,9 +68,8 @@ export const Formulario = () => {
       )}
 
       <div className="logo-container">
-        <img src="/icono.png" className="logo" />
-      </div>
-      <h3>Reserva el autobús para el próximo desplazamiento.</h3>
+              </div>
+      <h3>Reserva plaza para tus desplazamientos.</h3>
       <form ref={form} onSubmit={sendEmail}>
         <div className="field">
           <label htmlFor="transport">Desplazamiento</label>
