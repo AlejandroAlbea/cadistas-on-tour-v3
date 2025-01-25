@@ -75,7 +75,7 @@ export const Formulario = () => {
         <div className="field">
           <label htmlFor="transport">Desplazamiento</label>
           <select name="transport" required>
-            <option value="Albacete">Santander</option>
+            <option value="Santander">Santander</option>
             <option value="Albacete">Albacete</option>
           </select>
         </div>
